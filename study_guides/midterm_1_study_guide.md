@@ -8,12 +8,31 @@ Here are the key topics to study in preparation for the test.
 
 ## TESTING THEORY AND TERMINOLOGY
 * Equivalence class partitioning
+  + An equivalence class is a natural grouping of values with similar behavior or belonging to the same category.
+  + Ex) For all Positive numbers --> {1,2,3,4,5,6} belongs in the set. 
+  + Ex) You do not follow person A on Twitter --> you do not see person A's tweet. 
+  + Ex) You do follow person A on Twitter --> you see their tweet.
+  
 * Boundary and interior values
+  + Problems are more prevalent on the boundary than in the middle.
+  + Boundary Values include: MAXINT, MININT, undefined values, allocation limitation, and maximum precision of a floating       point value
+  
 * Base, Edge, and Corner cases
+  + Base case = not around the boundary (expected use case)
+  + Edge Case = next to the boundary (unexpected use case)
+  + Corner Case = A case that occurs only outside of normal operating paramters (combination of multiple edge cases)
+  
 * Static vs Dynamic testing
   * Know the differences and examples of each
+    + 
 * Black/White/Grey box testing
   * Know the differences and examples of each
+    + Black Box Testing = Testing with no knowledge of the interior system structure. Tests are based on the user's perspective looking at the system as a whole kind of what we did in deliverable #1.
+      + Tests include accessing a website, using a browser to look for flaws, running a script against an API endpoint, checking to see that changing fonts in a word processor returns the correct font.
+    + White Box Testing = Testing with explicit knowledge of the interior system structure and codebase. Tests directly with the code. Tests are often lower level and deals with testing individual methods kind of like what we did in deliverable #2.
+      + Tests include testing a function returns the correct value. testing that instantiating an object creates a valid object.
+    + Grey Box Testing = Testing with knowledge of the interior system structure and codebase of the system under test, but NOT directly testing with the code. Tests are similar to black box testing. 
+      + Tests include reviewing code, and then noticing that bubble sort is being used, then writing a user facing test involving a large input size.
 
 ## REQUIREMENTS ANALYSIS
 * What makes a good or bad requirement?
