@@ -24,7 +24,8 @@ Here are the key topics to study in preparation for the test.
   
 * Static vs Dynamic testing
   * Know the differences and examples of each
-    + 
+    + Static Testing = The code is reviewed by the person without the code actually being executed (includes source code analysis)
+    + Dynamic Testing = The code is actually being executed and we are testing how the code actually functions. Industry uses dynamic testing much more often as it is more efficient than static. 
 * Black/White/Grey box testing
   * Know the differences and examples of each
     + Black Box Testing = Testing with no knowledge of the interior system structure. Tests are based on the user's perspective looking at the system as a whole kind of what we did in deliverable #1.
@@ -36,17 +37,44 @@ Here are the key topics to study in preparation for the test.
 
 ## REQUIREMENTS ANALYSIS
 * What makes a good or bad requirement?
+  + Requirements specify what to do, not how to do it. 
+  + Leave it to the programmer to figure out the "how" side of things. 
+  
 * Testability - requirements must be:
   * Complete, consistent, unambiguous, quantitative, feasible
+      + Complete
+        + Requirements should cover all aspects of the system.
+      + Consistent
+        + Requirements should not contradict each other.
+        + Ex) Requirement 1 states that the bird cage should close its door when the bird goes inside the cage. Requirement 2 then states that the bird cage should open its door when the bird goes inside the cage. --> As such these two requirements are not consistent. 
+      + Unambiguous
+        + Specify what the "default values" or "specification values" are. 
+      + Quantitative
+        + Ex) Bad: The system will be responsive to the user.
+        +     Good: The system will respond to the user is less than one second for at least 99% of all expected queries.
+      + Feasible to Test
+        + Just basically means that the requirement shall be possible to test in an appearing possible amount of time, so tests that take 10000 years or more memory than our current system can hold, it is not possbile to test. 
+        
 * Functional vs Non-Functional Requirements  (Quality Attributes)
   * Be able to define and write your own
+    + Function Requirement = The system must DO something. 
+    + Quality Attribute = The system must BE something. 
 * Traceability Matrices
   * Be able to define and write your own
+    + Simply maps requirements to each of our test cases. 
 
 ## TEST PLANS
 * Given a list of requirements, be able to write a test plan
+  + Test-Case Identifier: Name of test case.
+  + Description: Describes what the test does.
+  + Preconditions: What must happen before this test can run as planned.
+  + Execution Steps: How do we execute this test?
+  + Postconditions: What kind of result should the test return for it to be a success(We do not care about what it exactly returns once we test it)
+  
 * Terminology: test cases, test plans, test suites, test runs
+  + test suites: collection of test cases used to check a specific requirement.
 * Verification vs validation
+  + Verifciation: 
 
 ## DEFECT REPORTING
 * Be prepared to report a defect based on a test case
