@@ -74,10 +74,16 @@ Here are the key topics to study in preparation for the test.
 * Terminology: test cases, test plans, test suites, test runs
   + test suites: collection of test cases used to check a specific requirement.
 * Verification vs validation
-  + Verifciation: 
+  + Verifciation: Ensures that the requirements are met.
+  + Validation: Ensures that the software built meets the customer's requirements as in whatever product they built is what the customer wants. 
 
 ## DEFECT REPORTING
 * Be prepared to report a defect based on a test case
+  + Summary: Probvides one sentence about the problem
+  + Description: Provides a lot more detail about the problem.
+  + Reproduction Steps: provides a step by step procedure on how to get to the error.
+  + Expected behavior: what is supposed to happen?
+  + Observed behavior: what actually happens? 
 * Remember the defect template:
   * SUMMARY, DESCRIPTION, REPRODUCTION STEPS, EXPECTED BEHAVIOR, OBSERVED BEHAVIOR
   * Optionally: SEVERITY/IMPACT, NOTES
@@ -86,11 +92,27 @@ Here are the key topics to study in preparation for the test.
 
 ## Smoke, Exploratory, and Path-based testing
 * Define all of these concepts
+  + Exploratory Testing: testing wihtout a test plan, goal is to simply explore the execution of the software.
+  + Smoke Testing: Making sure a few tests pass before we actually create an entire test plan for the software we are trying to test. 
+  + Path-Based Testing: Testing all possible paths to a piece of software.
+    + Example: Take a racing game for example with a red car and a blue car. One path could be: Red Car crosses the finish line --> Red Car wins the race --> Blue car loses the race
+      
 * I will not ask you to calculate cyclomatic complexity for a given method but I expect you to understand the concept and explain why a method with a higher or lower complexity might be easier/harder to test and why
+  + A method with higher complexity will have a lot more paths, making it harder to test because we would need to traverse each path. It would also yield a greater possibility of defects. A program with lower complexity would have a less chance for defects. 
 
 ## AUTOMATED TESTING
 * Pros and cons of automated testing
+  + Pros
+    1. Human error is thrown out of the window.
+    2. Fast test execution
+    3. Easy to set up
+  + Cons
+    1. Requires extra time up front.
+    2. May not catch some user-facing bugs. 
+    3. It only tests what it is looking for.
+    4. Requires more skilled developers.
 * Unit tests vs system/acceptance/integration tests
+  +  Unit Testing ensures that the smallest pieces of code works correctly. 
 
 ## UNIT TESTING
 * Unit tests
