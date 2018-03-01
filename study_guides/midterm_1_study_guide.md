@@ -218,4 +218,4 @@ Here are the key topics to study in preparation for the test.
   + Load testing = how many concurrent users and/or work can the system handle?
   + baseline test = a bare minimum amount to use to provide a baseline. 
   + soak/stability test = leave it running for an extended period of time, usually at low levels of usage. 
-  + stress test = high levels of activity.
+  + stress test = high levels of activity. 
