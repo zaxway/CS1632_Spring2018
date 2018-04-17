@@ -7,7 +7,7 @@ Note that the second midterm is _not_ cumulative, except in the sense that the t
 
 ## WEB TESTING
 * Be able to explain how you would test a web page with Katalon
- - To test a web page, you can do the following:
+   - To test a web page, you can do the following:
    assertTextPresent(asserts that the text exists by searching the entire page), 
    assertCookie, assertElementPresent(asserts the the element exists somewhere on the page, assertAlert
    (asserts that an alert took place), assertEditable(asserts that an element is editable), assertEval(evalulate some js, then
@@ -23,7 +23,10 @@ Note that the second midterm is _not_ cumulative, except in the sense that the t
 * Be able to name invariants given a function and sample input/output
 * Be able to show how invariants are broken
 * Understand what shrinking is and be able to shrink an input given an error
+  + Shrinking is being able to find the smallest possible error and helps track down the actual issue
 * For what kinds of functions is property-based testing useful?  For what kinds is it less useful?
+  + Property testing is useful for mathematical functions, pure functions, well-specified problems, and anything where a variety of inputs map to a specific kind of output.
+  + Property testing is not very useful for writing to a file, communicating over a network, displaying text or graphics, and impure functions in general. 
 
 ## STATIC ANALYSIS
 * Understand static vs dynamic testing
